@@ -33,7 +33,7 @@ const base44 = {
               status: 'en_construction',
               type: 'appartement',
               images: ['https://via.placeholder.com/800x600/2ecc71/ffffff?text=Les+Palmiers'],
-              price: '950 000 DH',
+              price: '900 000 DH',
               location: 'Quartier Résidentiel'
             },
             { 
