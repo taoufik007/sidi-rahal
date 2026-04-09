@@ -19,6 +19,7 @@ export default function Navbar() {
     { label: "Accueil", href: "/" },
     { label: "Avantages", href: "/#avantages" },
     { label: "Résidences", href: "/#residences" },
+    { label: "Devis", href: "/devis" },
     { label: "Contact", href: "/#contact" },
   ];
 
