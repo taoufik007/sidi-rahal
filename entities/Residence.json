@@ -1,0 +1,95 @@
+{
+  "name": "Residence",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nom de la r\u00e9sidence"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description d\u00e9taill\u00e9e de la r\u00e9sidence"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "villa",
+        "appartement",
+        "duplex",
+        "riad"
+      ],
+      "description": "Type de logement"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "livr\u00e9",
+        "en_construction",
+        "sur_plan"
+      ],
+      "description": "\u00c9tat d'avancement du projet"
+    },
+    "price_range": {
+      "type": "string",
+      "description": "Fourchette de prix (ex: 500,000 - 1,200,000 MAD)"
+    },
+    "surface_range": {
+      "type": "string",
+      "description": "Fourchette de surface (ex: 60m\u00b2 - 150m\u00b2)"
+    },
+    "amenities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Liste des commodit\u00e9s (Piscine, S\u00e9curit\u00e9 24/7, etc.)"
+    },
+    "image_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "URLs des images de la r\u00e9sidence"
+    },
+    "address": {
+      "type": "string",
+      "description": "Adresse de la r\u00e9sidence"
+    },
+    "promoteur": {
+      "type": "string",
+      "description": "Nom du promoteur immobilier"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Num\u00e9ro de t\u00e9l\u00e9phone"
+    },
+    "whatsapp": {
+      "type": "string",
+      "description": "Num\u00e9ro WhatsApp"
+    },
+    "email": {
+      "type": "string",
+      "description": "Adresse email de contact"
+    },
+    "bedrooms_range": {
+      "type": "string",
+      "description": "Nombre de chambres disponibles (ex: 2-4)"
+    },
+    "year_delivery": {
+      "type": "string",
+      "description": "Ann\u00e9e de livraison pr\u00e9vue"
+    },
+    "highlights": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Points forts de la r\u00e9sidence"
+    }
+  },
+  "required": [
+    "name",
+    "type",
+    "status"
+  ]
+}
